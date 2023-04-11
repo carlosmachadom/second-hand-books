@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Akasha Book Shop</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet" />
+        <style>
+            :root {
+                /* Main Colors */
+                --very-light-pink: #C7C7C7;
+                --main-white: #FFFFFF;
+                --text-input-field: #F7F7F7;
+                --main-black: #000000;
+                --hospital-green: #ACD9B2;
+                --dark: #232830;
+
+                /* Font sizes */
+                --big-font: 18px;
+                --medium-font: 16px;
+                --small-font: 14px;
+            }
+
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+
+            html {
+                font-size: 62.5%;
+            }
+
+            body {
+                font-family: 'Quicksand', sans-serif;
+            }
+
+            .mobile-menu {
+                width: 100%;
+                max-width: 420px;
+                height: auto;
+                padding: 2.8rem 2.4rem;
+            }
+
+            .title {
+                font-size: var(--short-font);
+                margin-block-end: 2rem;
+            }
+
+            .mobile-menu ul {
+                width: 100%;
+                list-style: none;
+                padding-block-end: 2rem;
+            }
+
+            ul .menu-item {
+                text-align: start;
+                padding-block-end: 2rem;                
+            }
+
+            .border-item {
+                border-block-end: solid .5px var(--very-light-pink);
+            }
+            
+            .menu-item a {
+                color: var(--dark);
+                font-size: var(--short-font);
+                font-weight: 700;
+                line-height: 22px;
+                vertical-align: middle;
+                text-decoration: none;
+            }
+
+            .sign-out-area p,
+            .sign-out-area a {
+                color: var(--dark);                
+                font-weight: 500;
+                text-decoration: none;
+                font-size: var(--short-font);
+                font-weight: 500;
+                margin-block-end: 1rem;
+            }
+
+            .sign-out-area a {
+                color: var(--hospital-green);                
+            }
+        </style>
+    </head>
+    <body>
+        <div class="mobile-menu">
+            <h2 class="title">CATEGORIES</h2>
+
+            <ul>
+                <li class="menu-item"><a href="">All</a></li>
+                <li class="menu-item"><a href="">Clothes</a></li>
+                <li class="menu-item"><a href="">Electronics</a></li>
+                <li class="menu-item"><a href="">Furnitures</a></li>
+                <li class="menu-item"><a href="">Toys</a></li>
+                <li class="menu-item"><a href="">Toys</a></li>
+                <li class="menu-item border-item"><a href="">Others</a></li>
+            </ul>
+
+            <ul>
+                <li class="menu-item"><a href="">My orders</a></li>
+                <li class="menu-item"><a href="">My account</a></li>
+            </ul>
+
+            <div class="sign-out-area">
+                <p>mcdario@gmail.com</p>
+                <a href="">Sign out</a>
+            </div>
+        </div>      
+        
+    </body>
+</html>
