@@ -1,10 +1,12 @@
 import '@styles/main.css';
+import Layout from './authentication/Layout';
+import Login from "./authentication/Login";
 
 const App = () => {
     return (
-        <div>
-            <h1>Hola mundo</h1>
-        </div>
+        <Layout>
+            <Login />
+        </Layout>
     );
 }
 
