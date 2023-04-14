@@ -1,0 +1,15 @@
+/* Variables */
+:root {
+    /* Main Colors */
+    --very-light-pink: #C7C7C7;
+    --main-white: #FFFFFF;
+    --text-input-field: #F7F7F7;
+    --main-black: #000000;
+    --hospital-green: #ACD9B2;
+    --dark: #232830;
+
+    /* Font sizes */
+    --big-font: 18px;
+    --medium-font: 16px;
+    --small-font: 14px;
+}

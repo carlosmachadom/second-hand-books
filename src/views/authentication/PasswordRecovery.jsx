@@ -7,6 +7,7 @@ const emailIcon = require('@images/icons/general/email.svg');
 
 const PasswordRecovery = () => {
     const yardSaleLogo = brandLogo;
+    const eIcon = emailIcon;
     return (
         <section className="sign-up">
             <div className="form-container">
@@ -16,7 +17,7 @@ const PasswordRecovery = () => {
                 <p className="sub-title">Please check you inbox for instructions on how to reset the password</p>
 
                 <div className="image-container">
-                    <img src={emailIcon} alt="" className="email-img" />
+                    <img src={eIcon} alt="" className="email-img" />
                 </div>
 
                 <button type="button" className="button-primary">Login</button>

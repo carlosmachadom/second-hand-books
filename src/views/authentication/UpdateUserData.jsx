@@ -1,3 +1,5 @@
+import '@styles/authentication/UpdateUserData.css'
+
 const UpdateUserData = () => {
     return (
         <section className="sign-up">

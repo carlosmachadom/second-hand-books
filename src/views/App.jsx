@@ -1,11 +1,13 @@
 import '@styles/main.css';
-import Layout from './authentication/Layout';
-import Login from "./authentication/Login";
+import '@styles/vars.css';
+import Layout from '@views/authentication/Layout';
+import SignUp from '@views/authentication/SignUp';
+
 
 const App = () => {
     return (
         <Layout>
-            <Login />
+            <SignUp />
         </Layout>
     );
 }

@@ -22,7 +22,8 @@ module.exports = {
       '@styles': path.resolve(__dirname, 'src/styles/'),
       '@assets': path.resolve(__dirname, 'src/assets/'),
       '@fonts': path.resolve(__dirname, 'src/assets/fonts/'),
-      '@images': path.resolve(__dirname, 'src/assets/images/')
+      '@images': path.resolve(__dirname, 'src/assets/images/'),
+      '@views': path.resolve(__dirname, 'src/views/')
     }
   },
   module: {
