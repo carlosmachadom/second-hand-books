@@ -13,6 +13,7 @@ module.exports = {
     clean: true
   },
   mode: 'development',
+  devtool: 'source-map',
   resolve: {
     extensions: [".js", ".jsx"],
     alias: {
@@ -26,7 +27,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$|jsx$/,
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
             loader: 'babel-loader',
@@ -72,6 +73,7 @@ module.exports = {
     }),
     new DotEnv(),
     new FaviconsWebpackPlugin('./src/assets/images/icons/general/icon_shopping_cart.svg'),
+    new BundleAnalyzerPlugin(),
   ],
   devServer: {
     static: 
@@ -82,7 +84,7 @@ module.exports = {
     watchFiles: path.join(__dirname, "./**"),
     compress: true,
     historyApiFallback: true,
-    port: 3000,
+    port: 3000 || 8000,
     open: true,    
   },
 }
