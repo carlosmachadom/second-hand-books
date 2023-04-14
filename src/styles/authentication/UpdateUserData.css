@@ -13,17 +13,17 @@
     max-width: 300px;
 }
 
-.logo {
-    justify-self: center;
-    margin-block-end: 4.8rem;
-    width: 150px;
-    display: none;
+.title {
+    color: var(--main-black);
+    font-size: var(--big-font);
+    font-weight: 700;
+    margin-block-end: 4rem;
+    text-align: left;
 }
 
 .form {
     display: flex;
     flex-direction: column;
-    margin-bottom: 6rem;
 }
 
 .label {
@@ -32,41 +32,11 @@
     margin-bottom: .4rem;
 }
 
-.input {
-    background-color: var(--text-input-field);
-    border: none;
-    border-radius: 8px;
+.value {
     font-size: var(--medium-font);
-    height: 32px;
-    margin-block-end: 1.2rem;
-    padding: .6rem;
-}
-
-.input.input-email {
-    margin-block-end: 2rem;
-}
-
-.button-primary {
-    background-color: var(--hospital-green);
-    border: none;
-    border-radius: 8px;
-    color: var(--main-white);
-    cursor: pointer;
-    height: 50px;
-    font-size: var(--medium-font);
-    font-weight: 700;
-    width: 100%;
-    margin-block-start: 2rem;
-    margin-block-end: 2.4rem;
-}
-
-.form a {
-    color: var(--hospital-green);
-    font-size: var(--medium-font);
-    font-weight: 500;
+    color: var(--very-light-pink);
     line-height: 20px;
-    text-decoration: none;
-    text-align: center;
+    margin-block-end: 2rem;
 }
 
 .button-secondary {
@@ -89,10 +59,6 @@
 }
 
 @media (max-width: 640px) {
-    .logo {
-        display: block;
-    }
-
     .button-secondary {
         position: absolute;
         bottom: 20px;

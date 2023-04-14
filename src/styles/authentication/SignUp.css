@@ -13,17 +13,17 @@
     max-width: 300px;
 }
 
-.logo {
-    justify-self: center;
-    margin-block-end: 4.8rem;
-    width: 150px;
-    display: none;
+.title {
+    color: var(--main-black);
+    font-size: var(--big-font);
+    font-weight: 700;
+    margin-block-end: 4rem;
+    text-align: left;
 }
 
 .form {
     display: flex;
     flex-direction: column;
-    margin-bottom: 6rem;
 }
 
 .label {
@@ -42,7 +42,9 @@
     padding: .6rem;
 }
 
-.input.input-email {
+.input.input-name,
+.input.input-email,
+.input.input-password {
     margin-block-end: 2rem;
 }
 
@@ -57,43 +59,10 @@
     font-weight: 700;
     width: 100%;
     margin-block-start: 2rem;
-    margin-block-end: 2.4rem;
-}
-
-.form a {
-    color: var(--hospital-green);
-    font-size: var(--medium-font);
-    font-weight: 500;
-    line-height: 20px;
-    text-decoration: none;
-    text-align: center;
-}
-
-.button-secondary {
-    background-color: var(--main-white);
-    border: solid var(--hospital-green) 1px;
-    border-radius: 8px;
-    color: var(--hospital-green);
-    cursor: pointer;
-    height: 50px;
-    font-size: var(--medium-font);
-    font-weight: 700;
-    width: 100%;
-}
-
-.button-secondary:hover {
-    color: white;
-    background-color: var(--hospital-green);
-    border: none;
-
 }
 
 @media (max-width: 640px) {
-    .logo {
-        display: block;
-    }
-
-    .button-secondary {
+    .button-primary {
         position: absolute;
         bottom: 20px;
         left: 50%;
@@ -103,7 +72,7 @@
 }
 
 @media (max-height: 470px) {
-    .button-secondary {
+    .button-primary {
         position: initial;
         transform: none;
     }
