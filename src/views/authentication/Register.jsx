@@ -1,7 +1,7 @@
 /* Importando estilos */
-import '@styles/authentication/SignUp.css';
+import '@styles/authentication/Register.css';
 
-const SignUp = () => {
+const Register = () => {
     return (
         <section className="sign-up">
             <div className="form-container">
@@ -24,4 +24,4 @@ const SignUp = () => {
     );
 }
 
-export default SignUp;
+export default Register;

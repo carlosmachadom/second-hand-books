@@ -1,23 +1,21 @@
 /* Importando estilos */
-import '@styles/authentication/PasswordRecovery.css';
+import '@styles/authentication/RecoverPassword.css';
 
 /* Importando elementos dependientes */
 const brandLogo = require('@images/icons/brand/logo_yard_sale.svg');
 const emailIcon = require('@images/icons/general/email.svg');
 
-const PasswordRecovery = () => {
-    const yardSaleLogo = brandLogo;
-    const eIcon = emailIcon;
+const RecoverPassword = () => {
     return (
         <section className="sign-up">
             <div className="form-container">
-                <img src={yardSaleLogo} alt="logo" className="logo" />
+                <img src={brandLogo} alt="logo" className="logo" />
 
                 <h1 className="title">Email has been sent!</h1>
                 <p className="sub-title">Please check you inbox for instructions on how to reset the password</p>
 
                 <div className="image-container">
-                    <img src={eIcon} alt="" className="email-img" />
+                    <img src={emailIcon} alt="" className="email-img" />
                 </div>
 
                 <button type="button" className="button-primary">Login</button>
@@ -31,4 +29,4 @@ const PasswordRecovery = () => {
     );
 }
 
-export default PasswordRecovery;
+export default RecoverPassword;

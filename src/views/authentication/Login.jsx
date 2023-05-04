@@ -2,7 +2,7 @@
 import '@styles/authentication/Login.css';
 
 /* Importando elementos dependientes */
-const Logo = require('@images/icons/brand/logo_yard_sale.svg')
+const Logo = require('@images/icons/brand/logo_yard_sale.svg');
 
 const Login = () => {
     const yardSaleLogo = Logo;

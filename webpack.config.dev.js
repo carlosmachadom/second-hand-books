@@ -10,6 +10,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "[name].[contenthash].js",
+    publicPath: '/',
     clean: true
   },
   mode: 'development',
@@ -22,7 +23,8 @@ module.exports = {
       '@assets': path.resolve(__dirname, 'src/assets/'),
       '@fonts': path.resolve(__dirname, 'src/assets/fonts/'),
       '@images': path.resolve(__dirname, 'src/assets/images/'),
-      '@views': path.resolve(__dirname, 'src/views/')
+      '@views': path.resolve(__dirname, 'src/views/'),
+      '@routes': path.resolve(__dirname, 'src/routes/'),
     }
   },
   module: {
@@ -31,20 +33,20 @@ module.exports = {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
-            loader: 'babel-loader',
+          loader: 'babel-loader',
         }
       },
       {
-          test: /\.html$/,
-          use: {
-              loader: 'html-loader'
-          }
+        test: /\.html$/,
+        use: {
+          loader: 'html-loader'
+        }
       },
       {
         test: /\.css$/,
         use: [
-            MiniCssExtractPlugin.loader,
-            'css-loader'
+          MiniCssExtractPlugin.loader,
+          'css-loader'
         ]
       },
       {
@@ -58,16 +60,16 @@ module.exports = {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: 'asset/resource',
         generator: {
-            filename: 'assets/fonts/[name].[hash][ext][query]',
+          filename: 'assets/fonts/[name].[hash][ext][query]',
         },
       },
     ]
   },
   plugins: [
     new HTMLWebpackPlugin({
-        inject: true,
-        template: './public/index.html',
-        filename: './index.html'
+      inject: true,
+      template: './public/index.html',
+      filename: './index.html'
     }),
     new MiniCssExtractPlugin({
       filename: 'assets/styles/[name].[contenthash].css'
@@ -77,7 +79,7 @@ module.exports = {
     new BundleAnalyzerPlugin(),
   ],
   devServer: {
-    static: 
+    static:
     {
       directory: path.join(__dirname, "dist"),
       watch: true,
@@ -86,6 +88,6 @@ module.exports = {
     compress: true,
     historyApiFallback: true,
     port: 3000 || 8000,
-    open: true,    
+    open: true,
   },
 }

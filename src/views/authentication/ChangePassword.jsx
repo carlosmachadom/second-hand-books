@@ -5,11 +5,10 @@ import '@styles/authentication/ChangePassword.css'
 const Logo = require('@images/icons/brand/logo_yard_sale.svg')
 
 const ChangePassword = () => {
-    const yardSaleLogo = Logo;
     return (
         <section className="sign-up">
             <div className="form-container">
-                <img src={yardSaleLogo} alt="logo" className="logo" />
+                <img src={Logo} alt="logo" className="logo" />
 
                 <h1 className="title">Create a new password</h1>
                 <p className="sub-title">Enter a new password for your account</p>
